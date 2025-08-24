@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.TicketPOS" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/navigation_bar</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        
+        <!-- Divider color -->
+        <item name="android:dividerHorizontal">@color/divider</item>
+        
+        <!-- Card style -->
+        <item name="materialCardViewStyle">@style/Widget.TicketPOS.CardView</item>
+        
+        <!-- Button styles -->
+        <item name="materialButtonStyle">@style/Widget.TicketPOS.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.TicketPOS.Button.Outlined</item>
+        <item name="materialButtonTextButtonStyle">@style/Widget.TicketPOS.Button.TextButton</item>
+        
+        <!-- Text input styles -->
+        <item name="textInputStyle">@style/Widget.TicketPOS.TextInputLayout</item>
+        
+        <!-- Toolbar style -->
+        <item name="toolbarStyle">@style/Widget.TicketPOS.Toolbar</item>
+        
+        <!-- Bottom navigation style -->
+        <item name="bottomNavigationStyle">@style/Widget.TicketPOS.BottomNavigation</item>
+        
+        <!-- Floating action button style -->
+        <item name="floatingActionButtonStyle">@style/Widget.TicketPOS.FloatingActionButton</item>
+        
+        <!-- Progress bar style -->
+        <item name="progressBarStyle">@style/Widget.TicketPOS.ProgressBar</item>
+        
+        <!-- Snackbar style -->
+        <item name="snackbarStyle">@style/Widget.TicketPOS.Snackbar</item>
+        
+        <!-- Dialog style -->
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.TicketPOS.MaterialAlertDialog</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="Theme.TicketPOS.Splash" parent="Theme.TicketPOS">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Card View style -->
+    <style name="Widget.TicketPOS.CardView" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardElevation">4dp</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <!-- Button styles -->
+    <style name="Widget.TicketPOS.Button" parent="Widget.Material3.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Widget.TicketPOS.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Widget.TicketPOS.Button.TextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!-- Text Input Layout style -->
+    <style name="Widget.TicketPOS.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="hintTextColor">@color/primary</item>
+    </style>
+
+    <!-- Toolbar style -->
+    <style name="Widget.TicketPOS.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/primary</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/white</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Bottom Navigation style -->
+    <style name="Widget.TicketPOS.BottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/surface</item>
+        <item name="itemIconTint">@color/bottom_navigation_item_color</item>
+        <item name="itemTextColor">@color/bottom_navigation_item_color</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <!-- Floating Action Button style -->
+    <style name="Widget.TicketPOS.FloatingActionButton" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">@color/primary</item>
+        <item name="tint">@color/white</item>
+        <item name="elevation">6dp</item>
+    </style>
+
+    <!-- Progress Bar style -->
+    <style name="Widget.TicketPOS.ProgressBar" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="indicatorColor">@color/primary</item>
+        <item name="trackColor">@color/primary_light</item>
+    </style>
+
+    <!-- Snackbar style -->
+    <style name="Widget.TicketPOS.Snackbar" parent="Widget.Material3.Snackbar">
+        <item name="backgroundTint">@color/surface</item>
+        <item name="actionTextColor">@color/primary</item>
+    </style>
+
+    <!-- Material Alert Dialog theme -->
+    <style name="ThemeOverlay.TicketPOS.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+    </style>
+
+    <!-- List Item styles -->
+    <style name="Widget.TicketPOS.ListItem" parent="Widget.Material3.ListItem">
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Divider style -->
+    <style name="Widget.TicketPOS.Divider" parent="Widget.Material3.Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <!-- Chip style -->
+    <style name="Widget.TicketPOS.Chip" parent="Widget.Material3.Chip.Assist">
+        <item name="chipBackgroundColor">@color/primary_light</item>
+        <item name="chipStrokeColor">@color/primary</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <!-- Switch style -->
+    <style name="Widget.TicketPOS.Switch" parent="Widget.Material3.Switch">
+        <item name="thumbTint">@color/switch_thumb_color</item>
+        <item name="trackTint">@color/switch_track_color</item>
+    </style>
+
+    <!-- Color state lists -->
+    <color name="bottom_navigation_item_color">@color/bottom_navigation_item_color_selector</color>
+    <color name="switch_thumb_color">@color/switch_thumb_color_selector</color>
+    <color name="switch_track_color">@color/switch_track_color_selector</color>
+</resources>
